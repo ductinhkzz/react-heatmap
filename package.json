@@ -1,0 +1,69 @@
+{
+  "name": "react-heatmap",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "SHOW_ALL_COMPONENT_DEMOS=true vite serve docs",
+    "build-docs": "rimraf docs/dist && vite build docs && serve -s docs/dist",
+    "ssr-docs": "rimraf docs/dist && vite-pages ssr docs && serve docs/dist",
+    "build-lib": "vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "prettier:check": "prettier --check .",
+    "format": "prettier --write 'src/**/*.{ts,tsx}'"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/react-heatmap.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ductinhkzz/react-heatmap"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "react-component",
+    "heatmap",
+    "calendar",
+    "react-heatmap",
+    "react-calendar-heatmap",
+    "github-heatmao",
+    "gitlab-heatmap"
+  ],
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@mdx-js/react": "^3.0.1",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^20.12.4",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "prettier": "^3.2.5",
+    "react-router-dom": "^6.22.3",
+    "react-tooltip": "^5.26.3",
+    "rimraf": "^5.0.5",
+    "serve": "^14.2.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-pages-theme-doc": "^5.0.0",
+    "vite-plugin-dts": "^3.8.1",
+    "vite-plugin-react-pages": "^5.0.0"
+  },
+  "description": "A calendar heatmap component built on SVG",
+  "author": "ductinhkzz",
+  "license": "MIT"
+}
