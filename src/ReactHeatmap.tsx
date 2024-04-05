@@ -52,7 +52,7 @@ function ReactHeatmap({
   const monthLabelSize = showMonthLabels ? MONTH_LABEL_SIZE[layout] : 0;
 
   const width = weekCount * squareSizeWithGutter - (gutterSize - weekDayLabelSize);
-  const height = weekWidth + (monthLabelSize - gutterSize) + weekDayLabelSize;
+  const height = weekWidth + (monthLabelSize - gutterSize);
 
   const dataLayout = {
     horizontal: {
